@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Dashboard</h2>
+<div class="card"><b>Total bugs:</b> {{ total }}</div>
+<div class="card"><h3>By status</h3>
+  {% for name, count in by_status.items() %}<p>{{ name }}: {{ count }}</p>{% else %}<p>No data</p>{% endfor %}
+</div>
+<div class="card"><h3>By severity</h3>
+  {% for name, count in by_severity.items() %}<p>{{ name }}: {{ count }}</p>{% else %}<p>No data</p>{% endfor %}
+</div>
+{% endblock %}

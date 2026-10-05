@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA Tracker</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; padding: 0 15px; color: #222; }
+    nav a { margin-right: 15px; text-decoration: none; color: #0b5ed7; font-weight: bold; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f0f0f0; }
+    input, select, textarea, button { padding: 6px; margin: 4px 0; }
+    .card { border: 1px solid #ccc; padding: 12px; margin: 10px 0; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>QA Tracker</h1>
+  <nav><a href="/">Bugs</a><a href="/dashboard">Dashboard</a></nav>
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+</html>
